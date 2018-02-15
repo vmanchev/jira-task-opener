@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Test Extension Options</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="./options/options.js"></script>
+    <link rel="stylesheet" href="./options/options.css">
+  </head>
+
+  <body>
+    <h3>My Jira projects:</h3>
+
+    <div class="success-message">
+      Your projects was saved successfully!
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Code</th>
+          <th>URL</th>
+          <th>&nbsp;</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>
+            <input type="text" name="name" size="10">
+          </td>
+          <td>
+            <input type="text" name="code" size="10">
+          </td>
+          <td>
+            <input type="text" name="url" size="50">
+          </td>
+          <td>
+            <img src="./options/remove.png" class="remove icon" />
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">
+            <button class="action-button add">
+              <img class="icon" src="./options/add.png" />
+              Add new project
+            </button>
+          </td>
+          <td>
+            <button class="action-button save">
+              <img class="icon" src="./options/save.png" />
+              Save configuration
+            </button>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+
+  </body>
+</html>

@@ -1,0 +1,40 @@
+table > thead th {
+  text-align: left;
+}
+
+table > tbody > tr:last-of-type td {
+  padding-bottom: 20px;
+}
+
+table > tfoot th:first-of-type {
+  text-align: left;
+}
+
+table > tfoot td:last-of-type {
+  text-align: right;
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+}
+
+.remove {
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.action-button .icon {
+  float: left;
+  margin-top: 2px;
+  margin-right: 6px;
+}
+
+.success-message {
+  display: none;
+  border: solid 1px green;
+  border-radius: 5px;
+  background-color: rgba(0,128,0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+}
