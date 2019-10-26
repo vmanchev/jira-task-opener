@@ -1,6 +1,5 @@
 body {
   width: 300px;
-  height: 100px;
 }
 
 .jira-opener {
@@ -13,12 +12,14 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
+  margin-bottom: 0;
 }
 
 .jira-opener__form select,
 .jira-opener__form input {
   font-size: 16px;
   padding: 2px 5px;
+  height: 26px;
 }
 
 .jira-opener__form select:focus,
@@ -26,21 +27,12 @@ body {
   outline: none; 
 }
 
-#options-trigger {
-  border: none;
-  cursor: pointer;
+
+.jira-opener__settings {
+  height: 26px;
 }
 
-#options-trigger:focus {
-  outline: none;
-}
-
-#options-trigger img {
+.jira-opener__settings img {
   width: 12px;
   height: 12px;
-
-  border: none;
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
 }

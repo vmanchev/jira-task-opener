@@ -29,7 +29,7 @@ $(function () {
 
     var projectsDropdown = $('#projectKey');
 
-    if (data.jiraProjects.length === 0) {
+    if (!data.jiraProjects || data.jiraProjects.length === 0) {
       return;
     }
 
@@ -45,7 +45,7 @@ $(function () {
 
   });
 
-  $('#options-trigger').click(function () {
+  $('.jira-opener__settings img').click(function () {
     chrome.runtime.openOptionsPage()
   });
 
